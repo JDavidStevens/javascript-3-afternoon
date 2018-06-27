@@ -30,6 +30,18 @@
 */
 
 //Code Here
+class Employee{
+  constructor(nam1,nam2,email,age){
+    this.first_name=nam1;
+    this.last_name= nam2;
+    this.email= email;
+    this.age= age;
+  }
+makeWidget(){
+  return this.first_name + this.last_name + " widget";
+}
+
+}
 
 
 
