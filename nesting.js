@@ -142,7 +142,7 @@ var myCar = {
 function recordCleaner(){
   console.log(myCar.accidents);
   myCar.accidents.map((val,i)=>{
-    if(val.atFaultForAccident=true){
+    if(val.atFaultForAccident===true){
       val.atFaultForAccident=false
     }
     
