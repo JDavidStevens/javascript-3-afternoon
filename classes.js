@@ -38,9 +38,10 @@ class Employee{
     this.age= age;
   }
 makeWidget(){
-  return this.first_name + this.last_name + " widget";
-}
-
+   this.first_name + this.last_name + " Widget";
+  return `${this.first_name} ${this.last_name} Widget` 
+  }  
+  
 }
 
 
@@ -62,6 +63,25 @@ makeWidget(){
 */
 
 //Code Here
+class Manager{
+  constructor(nam1,nam2,email,age){
+    this.first_name=nam1;
+    this.last_name= nam2;
+    this.email= email;
+    this.age= age;
+    this.reports=[];
+
+  }
+  hire(employee){
+    this.reports.push(employee);
+  }
+  fire(index){
+    this.reports.splice(index,1)
+      
+    
+  }
+}
+
 
 
 
@@ -115,5 +135,6 @@ makeWidget(){
 */
 
 //Code Here
+
 
 
